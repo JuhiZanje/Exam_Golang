@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main(){
-
-	num:=11111100
+	
+	var num int
+	fmt.Println("Enter binary num:")
+	fmt.Scan(&num)
 	
 	zeros:=findMaxConsecutiveZero(num)
 	ones:=findMaxConsecutiveOne(num)
